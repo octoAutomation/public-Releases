@@ -1,0 +1,28 @@
+PLC Code Reader
+Copyright 2026 Octo Automation (octo-automation.ca)
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This binary statically links the following third-party Rust crates, compiled from
+Cargo.lock. All are published under permissive licenses (MIT and/or Apache-2.0,
+per each crate's own license file), the convention for the Rust ecosystem:
+
+    aho-corasick, atomic-waker, axum, axum-core, bytes, cfg-if, core_detect,
+    crc32fast, encoding_rs, equivalent, flate2, futures-channel, futures-core,
+    futures-task, futures-util, hashbrown, http, http-body, http-body-util,
+    httparse, httpdate, hyper, hyper-util, indexmap, itoa, libc, matchit,
+    memchr, mime, mio, multer, multiversion_no_op, percent-encoding,
+    pin-project-lite, proc-macro2, quick-xml, quote, regex, regex-automata,
+    regex-syntax, rustversion, scopeguard, serde, serde_core, serde_derive,
+    serde_json, simdutf8, slab, smallvec, socket2, spin, syn, sync_wrapper,
+    tokio, tokio-macros, tower, tower-layer, tower-service, typed-path,
+    unicode-ident, version_check, wasi, windows-link, windows-sys, zip,
+    zlib-rs, zmij
+
+This list was generated from the crate names in Cargo.lock and cross-checked
+against each crate's published license from general knowledge of the Rust
+ecosystem, not from an automated license-scan tool. For an authoritative,
+per-crate attribution file, run `cargo about generate` (or `cargo license`)
+against the source repository and replace this section with its output.
+
+None of the above are known copyleft (e.g. GPL/LGPL/AGPL) licenses.
