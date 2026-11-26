@@ -5,6 +5,12 @@ You write the model in the `.c4` DSL. It draws C4 views, keeps hand-made layouts
 
 It runs locally and works offline. No server and no account are needed.
 
+![C4Lens viewer landing page listing the views of a model, from landscape down to containers](screenshots/viewer.png)
+
+A view exported as SVG or PNG, here the system context of C4Lens itself:
+
+![C4 system context diagram exported by C4Lens](screenshots/context-diagram.png)
+
 Get the latest build from the [Releases page](../../releases?q=c4-lens) (tagged `c4-lens-v<version>`).
 
 ## Install

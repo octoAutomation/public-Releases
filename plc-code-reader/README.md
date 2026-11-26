@@ -5,6 +5,8 @@ It only reads the file. It never connects to a PLC or controller, and nothing ab
 
 Get the latest build from the [Releases page](../../releases?q=plc-code-reader) (tagged `plc-code-reader-v<version>`).
 
+![Ladder logic drawn as a readable schematic, with the section list on the left](screenshots/ladder.png)
+
 ## Files it opens
 
 - Schneider EcoStruxure Control Expert exports: `.zef` or `.xef`
@@ -31,6 +33,10 @@ To start it without opening a browser, run `plcreader.exe --no-open` from a comm
 - Types: user-defined types (UDTs, DDTs) and function blocks (AOIs, DFBs) with their parameters and internal logic. A protected block shows its interface only.
 - Hardware: the CPU, racks, remote drops and modules.
 - Document: the whole program on one page. Use *Print / Save as PDF* to hand it off.
+
+![Cross-ref tab showing where a tag is written and read, with a trace of what drives it](screenshots/cross-ref.png)
+
+The screenshots show a small made-up program, not a real plant.
 
 If the reader cannot draw part of a section, the section shows a "Partial" warning with the number of elements it skipped.
 
