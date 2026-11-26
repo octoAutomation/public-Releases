@@ -1,0 +1,100 @@
+C4Lens
+Copyright 2026 Sanchit Sahay
+
+This product is licensed under the Apache License, Version 2.0.
+See the LICENSE file in the root of this source tree.
+
+================================================================================
+
+CREDIT
+
+C4Lens is inspired by LikeC4 (https://likec4.dev, MIT License, Copyright (c)
+2023-2026 Denis Davydkov), whose DSL and viewer set its direction. C4Lens reads
+the same `.c4` syntax and `.likec4.snap` layout files and does not depend on
+LikeC4. Its engine (src/engine), viewer (src/viewer) and MCP read tools
+(src/mcp/read-tools) were written from LikeC4's public documentation and
+observed behaviour under clean-room rules, not from its source;
+docs/sdlc/engine/README.md records the process and the duplicate-code scan.
+
+C4Lens versions up to 0.2.2 were built on LikeC4 as a dependency. Code written
+in that period, notably the static SVG shapes in src/svg/shapes.ts, which
+reproduce the look of LikeC4's element shapes, may contain material derived
+from LikeC4. To the extent it does, it is used under LikeC4's MIT License:
+
+MIT License
+
+Copyright (c) 2023-2026 Denis Davydkov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+
+THIRD-PARTY SOFTWARE NOTICES AND INFORMATION
+
+C4Lens calls the following published npm packages at run time. They are
+installed as unmodified dependencies, under their own licenses; no source is
+copied into C4Lens.
+
+--------------------------------------------------------------------------------
+
+@hpcc-js/wasm-graphviz
+https://github.com/hpcc-systems/hpcc-js-wasm
+
+Used to lay out views with Graphviz `dot`, compiled to WebAssembly.
+
+Apache License, Version 2.0. The package wraps Graphviz
+(https://graphviz.org), which is licensed under the Eclipse Public License,
+Version 1.0 (EPL-1.0). The Graphviz source is available from
+https://gitlab.com/graphviz/graphviz.
+
+--------------------------------------------------------------------------------
+
+@resvg/resvg-js
+https://github.com/thx/resvg-js
+
+Used to rasterize C4Lens's own exported SVGs into PNGs (`c4lens export png`,
+FR-20).
+
+Mozilla Public License 2.0 (MPL-2.0)
+
+This Source Code Form is subject to the terms of the Mozilla Public License,
+v. 2.0. If a copy of the MPL was not distributed with this file, you can
+obtain one at https://mozilla.org/MPL/2.0/.
+
+MPL-2.0 is file-level copyleft: it applies to resvg-js's own source and does
+not extend to C4Lens code that merely calls it as a library.
+
+--------------------------------------------------------------------------------
+
+Other runtime dependencies, each under its own permissive license:
+@modelcontextprotocol/sdk (MIT), commander (MIT), diff (BSD-3-Clause),
+json5 (MIT), yaml (ISC), zod (MIT).
+
+================================================================================
+
+BUILT ARTIFACTS
+
+The interactive viewer that `c4lens build` writes (`index.html`, `viewer.html`)
+contains only C4Lens code and the user's own model data.
+
+================================================================================
+
+ADAPTED SOURCE FILES
+
+None known. See CREDIT for code written while C4Lens was built on LikeC4.
